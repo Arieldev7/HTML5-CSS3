@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>formularios</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container mt-5">
+        <form action="" method="post">
+            <fieldset class="border p-4 rounded">
+                <legend class="w-auto px-2">Formulário de Cadastro</legend>
+                
+                <!-- Campo de Curso -->
+                <div class="form-group">
+                    <label for="curso">Curso:</label>
+                    <input type="text" class="form-control" id="curso" name="curso" value="HTML5 + CSS3" maxlength="50" size="25">
+                </div>
+
+                <!-- Campo de Senha -->
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" class="form-control" id="senha" name="senha" maxlength="100" size="20">
+                </div>
+
+                <!-- Estado Civil -->
+                <div class="form-group">
+                    <label>Estado Civil:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="civil" value="sol" checked>
+                        <label class="form-check-label">Solteiro(a)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="civil" value="cas">
+                        <label class="form-check-label">Casado(a)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="civil" value="ama">
+                        <label class="form-check-label">Amasiado(a)</label>
+                    </div>
+                </div>
+
+                <!-- Instrumentos Preferidos -->
+                <div class="form-group">
+                    <label>Instrumento Preferido:</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="item1" value="bateria" checked>
+                        <label class="form-check-label">Bateria</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="item2" value="teclado">
+                        <label class="form-check-label">Teclado</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="item3" value="guitarra">
+                        <label class="form-check-label">Guitarra</label>
+                    </div>
+                </div>
+
+                <!-- Campo de Cidade -->
+                <div class="form-group">
+                    <label for="cidade">Cidade:</label>
+                    <select name="cidade" id="cidade" class="form-control">
+                        <option value="0">Selecione</option>
+                        <option value="taq">Taquaritinga</option>
+                        <option value="jal">Jales</option>
+                    </select>
+                </div>
+
+                <!-- Área de Texto -->
+                <div class="form-group">
+                    <label for="areadetexto">Deixe sua opinião aqui:</label>
+                    <textarea name="areadetexto" id="areadetexto" class="form-control" rows="6" cols="45"></textarea>
+                </div>
+
+                <!-- Botão de Envio -->
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <button type="button" class="btn btn-success">Enviar</button>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
